@@ -1,5 +1,5 @@
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
-local Window = Rayfield:CreateWindow({
+Main Window = Rayfield:CreateWindow({
    Name = "Rayfield Example Window",
    LoadingTitle = "M U G E N",
    LoadingSubtitle = "Welcome To Hell!",
