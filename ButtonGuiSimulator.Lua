@@ -26,21 +26,11 @@ local Window = Rayfield:CreateWindow({
 })
 
 local Tab = Window:CreateTab("Auto Farm", 4483362458) -- Title, Image
-local Toggle = Tab:CreateToggle({
-   Name = "Auto Farm Money",
-   CurrentValue = true,
-   Flag = "Toggle1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
-   Callback = function(state)
-         if state then money = state
-            while money == true do
-            wait()
-            workspace:WaitForChild("Scripts"):WaitForChild("Addclick"):WaitForChild("AddClick"):FireServer()
-            else
-               money = state
-               while money == true do
-                  print("stopped")
-               end
-            end
-         end
+local Button = Tab:CreateButton({
+   Name = "Button Example",
+   Callback = function()
+   for i = 1, 100 do
+
+end
    end,
 })
