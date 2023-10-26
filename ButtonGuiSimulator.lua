@@ -25,7 +25,7 @@ Main = Window = Rayfield:CreateWindow({
    }
 })
 
-local MainTab = Window:CreateTab("Auto Farm", 4483362458) -- Title, Image
+local Main = Window:CreateTab("Auto Farm", 4483362458) -- Title, Image
 local MainButton = Tab:CreateButton({
    Name = "Money 1000x",
    Callback = function()
