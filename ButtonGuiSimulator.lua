@@ -27,10 +27,34 @@ local Window = Rayfield:CreateWindow({
 
 local Tab = Window:CreateTab("Auto Farm", 4483362458) -- Title, Image
 local Button = Tab:CreateButton({
-   Name = "Button Example",
+   Name = "Money 1000x",
    Callback = function()
-   for i = 1, 100 do
-
+   for i = 1, 1000 do
+workspace:WaitForChild("Scripts"):WaitForChild("Addclick"):WaitForChild("AddClick"):FireServer()
 end
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Money 10000x",
+   Callback = function()
+  for i = 1, 10000 do
+workspace:WaitForChild("Scripts"):WaitForChild("Addclick"):WaitForChild("AddClick"):FireServer()
+         end
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Multipler 1000x",
+   Callback = function()
+         for i = 1, 1000 do
+   workspace:WaitForChild("Scripts"):WaitForChild("AddMultiplier1"):WaitForChild("AddMultiplier"):FireServer()
+         end
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "open 1000 charm",
+   Callback = function()
+   for i = 1, 1000 do
+workspace:WaitForChild("Scripts"):WaitForChild("ClassicCharmsNew"):WaitForChild("OpenCharm"):FireServer()
+         end
    end,
 })
