@@ -9,7 +9,7 @@ local Window = Rayfield:CreateWindow({
       FileName = "MUGEN"
    },
    Discord = {
-      Enabled = true,
+      Enabled = false,
       Invite = "fQn2eFhsfQ", -- The Discord invite code, do not include discord.gg/. E.g. discord.gg/ABCD would be ABCD
       RememberJoins = false -- Set this to false to make them join the discord every time they load it up
    },
@@ -25,8 +25,8 @@ local Window = Rayfield:CreateWindow({
    }
 })
 
-local Tab = Window:CreateTab("Auto Farm", 4483362458) -- Title, Image
-local Button = Tab:CreateButton({
+local MainTab = Window:CreateTab("Auto Farm", 4483362458) -- Title, Image
+local MainButton = Tab:CreateButton({
    Name = "Money 1000x",
    Callback = function()
    for i = 1, 1000 do
@@ -34,7 +34,7 @@ workspace:WaitForChild("Scripts"):WaitForChild("Addclick"):WaitForChild("AddClic
 end
    end,
 })
-local Button = Tab:CreateButton({
+local MainButton = Tab:CreateButton({
    Name = "Money 10000x",
    Callback = function()
   for i = 1, 10000 do
@@ -42,7 +42,7 @@ workspace:WaitForChild("Scripts"):WaitForChild("Addclick"):WaitForChild("AddClic
          end
    end,
 })
-local Button = Tab:CreateButton({
+local MainButton = Tab:CreateButton({
    Name = "Multipler 1000x",
    Callback = function()
          for i = 1, 1000 do
@@ -50,7 +50,7 @@ local Button = Tab:CreateButton({
          end
    end,
 })
-local Button = Tab:CreateButton({
+local MainButton = Tab:CreateButton({
    Name = "open 1000 charm",
    Callback = function()
    for i = 1, 1000 do
