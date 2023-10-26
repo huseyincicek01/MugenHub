@@ -1,8 +1,8 @@
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 local Window = Rayfield:CreateWindow({
    Name = "Rayfield Example Window",
-   LoadingTitle = "Rayfield Interface Suite",
-   LoadingSubtitle = "by Sirius",
+   LoadingTitle = "M U G E N",
+   LoadingSubtitle = "Welcome To Hell!",
    ConfigurationSaving = {
       Enabled = false,
       FolderName = MUGEN, -- Create a custom folder for your hub/game
@@ -13,7 +13,7 @@ local Window = Rayfield:CreateWindow({
       Invite = "fQn2eFhsfQ", -- The Discord invite code, do not include discord.gg/. E.g. discord.gg/ABCD would be ABCD
       RememberJoins = false -- Set this to false to make them join the discord every time they load it up
    },
-   KeySystem = true, -- Set this to true to use our key system
+   KeySystem = false, -- Set this to true to use our key system
    KeySettings = {
       Title = "M U G E N",
       Subtitle = "Key System",
